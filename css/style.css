@@ -36,12 +36,39 @@ body{
 }
 
 .navbar > *{
-    background-color: #fff;
     flex-basis: 20%;
+}
+
+.navbar-site{
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.navbar li{
+    list-style-type: none;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar-site a:hover{
+    text-decoration: underline;
 }
 
 .navbar-logo{
     flex-grow: 1;
+    justify-content: center;
+}
+
+.navbar-logo img{
+    width: 100px;
+}
+
+.navbar-user{
+    justify-content: flex-end;
+    gap: 10px;    
 }
 
 /* Main */
