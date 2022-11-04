@@ -8,6 +8,7 @@
 /* Generics */
 body{
     font-family: sans-serif;
+    padding-top: 60px;
 }
 
 /* Utils */
@@ -27,6 +28,12 @@ body{
 /* Header */
 #fixed-header{
     background-color: #ff6900;
+    box-shadow: 0 0 5px #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
 }
 
 .navbar{
