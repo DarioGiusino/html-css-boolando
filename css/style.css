@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+:root{
+    --discountlabel: #f00;
+    --ecolabel: #080;
+}
+
 /* Generics */
 body{
     font-family: sans-serif;
@@ -87,7 +92,54 @@ body{
 
 .col{
     flex-basis: calc(100% / 3);
-    background-color: #a1a1a1;
+    position: relative;
+}
+
+.col img{
+    max-width: 100%;
+}
+
+.product-title{
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.price{
+    color: var(--discountlabel);
+    font-weight: bold;
+}
+
+.price > del{
+    font-weight: normal;
+    color: #000;
+}
+
+.label{
+    color: #fff;
+    position: absolute;
+    bottom: 80px;
+    padding: 5px;
+    font-size: 13px;
+    font-weight: bold;
+}
+.discount{
+    background-color: var(--discountlabel);
+}
+.eco{
+    background-color: var(--ecolabel);
+    left: 50px;
+}
+
+.col::after{
+    content: '\2665';
+    background-color: #fff;
+    font-size: 30px;
+    padding: 7px 15px;
+    position: absolute;
+    top: 5px;
+    right: 0;
+    text-align: center;
 }
 
 /* Footer */
