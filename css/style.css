@@ -85,9 +85,8 @@ body{
 
 /* Main */
 .row{
-    height: 600px;
     gap: 10px;
-    padding-top: 40px;
+    padding-top: 60px;
 }
 
 .col{
