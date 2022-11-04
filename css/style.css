@@ -37,7 +37,7 @@ body{
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 2;
     width: 100%;
 }
 
@@ -131,7 +131,7 @@ body{
     left: 50px;
 }
 
-.col::after{
+.favourite{
     content: '\2665';
     background-color: #fff;
     font-size: 30px;
@@ -140,7 +140,23 @@ body{
     top: 5px;
     right: 0;
     text-align: center;
+    cursor: pointer;
 }
+
+.favourite:hover{
+    color: #f00;
+}
+
+.hover-product{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display:none
+}
+.col:hover .hover-product{
+    display: inline-block;
+}
+
 
 /* Footer */
 .footer-site{
