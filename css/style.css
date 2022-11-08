@@ -84,19 +84,70 @@ a:hover{
 }
 
 /* Main */
-.row{
-    gap: 10px;
-    padding-top: 60px;
+.products-page{
+    padding: 13px;
 }
-
+.row{
+    justify-content: center;
+    margin: 0 -10px;
+}
 .col{
     flex-basis: calc(100% / 3);
+    padding: 10px;
     position: relative;
     cursor: pointer;
 }
 
-.col img{
+.card-image{
+    position: relative;
+}
+.card-image img{
     max-width: 100%;
+    display: block;
+}
+.card-image .hover-product{
+    display: none;
+}
+.card-image:hover .hover-product{
+    display: block;
+}
+.card-image:hover .main-product{
+    display: none;
+}
+
+.favourite{
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    background-color: #fff;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+.favourite:hover{
+    color: #f00;
+}
+
+.product-spec{
+    position: absolute;
+    bottom: 50px;
+    left: 5px; 
+}
+.label{
+    padding: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff;
+}
+.discount{
+    background-color: var(--discountlabel);
+}
+.eco{
+    background-color: var(--ecolabel);
 }
 
 .product-title{
@@ -104,70 +155,19 @@ a:hover{
     font-weight: bold;
     text-transform: uppercase;
 }
-
 .price{
     color: var(--discountlabel);
     font-weight: bold;
 }
 
-.price > del{
-    font-weight: normal;
-    color: #000;
-}
-
-.label{
-    color: #fff;
-    position: absolute;
-    bottom: 80px;
-    padding: 5px;
-    font-size: 13px;
-    font-weight: bold;
-}
-.discount{
-    background-color: var(--discountlabel);
-}
-.eco{
-    background-color: var(--ecolabel);
-    left: 50px;
-}
-
-.favourite{
-    content: '\2665';
-    background-color: #fff;
-    font-size: 30px;
-    padding: 7px 15px;
-    position: absolute;
-    top: 5px;
-    right: 0;
-    text-align: center;
-    cursor: pointer;
-}
-
-.favourite:hover{
-    color: #f00;
-}
-
-.hover-product{
-    position: absolute;
-    top: 0;
-    right: 0;
-    display:none
-}
-.col:hover .hover-product{
-    display: inline-block;
-}
-
-
 /* Footer */
 .footer-site{
     background-color: #1a1a1a;
-    border-bottom: 2px solid #fff;
-    margin-top: 60px;
     color:#fff;
 }
 
 .footer-info{
-    height: 100px;
+    height: 80px;
     justify-content: space-between;
     align-items: center;
 }
